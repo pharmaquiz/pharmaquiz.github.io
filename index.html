@@ -1,96 +1,152 @@
-from pathlib import Path
-
-html = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PharmaQuiz | Official Legal Website</title>
-<meta name="description" content="Official PharmaQuiz legal website. Privacy Policy, Terms & Conditions, Medical Disclaimer and Purchase & Refund Policy.">
-<link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PharmaQuiz | Official Legal Website</title>
+
+    <meta name="description"
+        content="Official PharmaQuiz Legal Website - Privacy Policy, Terms & Conditions, Medical Disclaimer and Purchase & Refund Policy.">
+
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-<header class="hero">
-    <img src="assets/images/logo.png" alt="PharmaQuiz Logo" class="logo">
-    <h1>PharmaQuiz</h1>
-    <p class="tagline">Master Pharmacy Learning Platform</p>
+    <!-- HEADER -->
 
-    <nav class="topnav">
-        <a href="index.html">Home</a>
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms-and-conditions.html">Terms</a>
-        <a href="medical-disclaimer.html">Medical Disclaimer</a>
-        <a href="purchase-refund-policy.html">Refund Policy</a>
-    </nav>
-</header>
+    <header class="hero">
 
-<main>
+        <img src="assets/images/logo.png" alt="PharmaQuiz Logo" class="logo">
 
-<section class="welcome">
-<h2>Official Legal Documentation</h2>
+        <h1>PharmaQuiz</h1>
 
-<p>
-Welcome to the official PharmaQuiz legal website.
-Here you can access our Privacy Policy,
-Terms & Conditions,
-Medical Disclaimer,
-and Purchase & Refund Policy.
-</p>
+        <p class="tagline">
+            Official Legal Documentation
+        </p>
 
-</section>
+        <nav class="topnav">
 
-<section class="cards">
+            <a href="index.html">Home</a>
 
-<div class="card">
-<h3>Privacy Policy</h3>
-<p>Learn how PharmaQuiz collects, uses and protects your information.</p>
-<a href="privacy-policy.html">Read More</a>
-</div>
+            <a href="privacy-policy.html">Privacy Policy</a>
 
-<div class="card">
-<h3>Terms & Conditions</h3>
-<p>Read the rules governing the use of PharmaQuiz.</p>
-<a href="terms-and-conditions.html">Read More</a>
-</div>
+            <a href="terms-and-conditions.html">Terms</a>
 
-<div class="card">
-<h3>Medical Disclaimer</h3>
-<p>Educational purpose and medical information disclaimer.</p>
-<a href="medical-disclaimer.html">Read More</a>
-</div>
+            <a href="medical-disclaimer.html">Medical Disclaimer</a>
 
-<div class="card">
-<h3>Purchase & Refund Policy</h3>
-<p>Information regarding Capsules, billing and refunds.</p>
-<a href="purchase-refund-policy.html">Read More</a>
-</div>
+            <a href="purchase-refund-policy.html">Refund Policy</a>
 
-</section>
+        </nav>
 
-<section class="developer">
-<h2>Developer</h2>
+    </header>
 
-<p><strong>Developer:</strong> ARUN C</p>
-<p><strong>Email:</strong> pharmanewsglobal@gmail.com</p>
+    <!-- MAIN -->
 
-</section>
+    <main>
 
-</main>
+        <section class="welcome">
 
-<footer>
+            <h2>Welcome to PharmaQuiz</h2>
 
-<p>© 2026 PharmaQuiz. All Rights Reserved.</p>
+            <p>
+                This is the official legal website of PharmaQuiz.
+                Here you can access all official legal documents
+                including Privacy Policy, Terms & Conditions,
+                Medical Disclaimer and Purchase & Refund Policy.
+            </p>
 
-</footer>
+        </section>
 
-<script src="assets/js/script.js"></script>
+        <section class="cards">
+
+            <div class="card">
+
+                <h3>Privacy Policy</h3>
+
+                <p>
+                    Learn how PharmaQuiz collects,
+                    uses and protects your information.
+                </p>
+
+                <a href="privacy-policy.html">
+                    Read More
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Terms & Conditions</h3>
+
+                <p>
+                    Read the official rules and conditions
+                    governing the use of PharmaQuiz.
+                </p>
+
+                <a href="terms-and-conditions.html">
+                    Read More
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Medical Disclaimer</h3>
+
+                <p>
+                    Educational information and medical disclaimer.
+                </p>
+
+                <a href="medical-disclaimer.html">
+                    Read More
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Purchase & Refund Policy</h3>
+
+                <p>
+                    Learn about Capsules, purchases,
+                    billing and refund policies.
+                </p>
+
+                <a href="purchase-refund-policy.html">
+                    Read More
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="developer">
+
+            <h2>Developer Information</h2>
+
+            <p><strong>Developer:</strong> ARUN C</p>
+
+            <p><strong>Email:</strong> pharmanewsglobal@gmail.com</p>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 PharmaQuiz. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
+
 </html>
-"""
-
-path="/mnt/data/index.html"
-Path(path).write_text(html,encoding="utf-8")
-print(path)
-
