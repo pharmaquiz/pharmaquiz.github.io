@@ -1,2 +1,10 @@
-# pharmaquiz.github.io
-Official website of PharmaQuiz – Privacy Policy, Terms &amp; Conditions, support, and educational resources.
+PharmaQuiz Legal Website
+
+Files:
+- index.html
+- style.css
+- script.js
+
+Upload all files to the root of your GitHub Pages repository.
+
+Replace the placeholder text in index.html with the full Privacy Policy.
