@@ -1,61 +1,96 @@
-<!DOCTYPE html>
+from pathlib import Path
+
+html = """<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PharmaQuiz - Privacy Policy</title>
-<link rel="stylesheet" href="style.css">
+<title>PharmaQuiz | Official Legal Website</title>
+<meta name="description" content="Official PharmaQuiz legal website. Privacy Policy, Terms & Conditions, Medical Disclaimer and Purchase & Refund Policy.">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header>
-<h1>PharmaQuiz</h1>
-<p>Official Privacy & Legal Information</p>
+
+<header class="hero">
+    <img src="assets/images/logo.png" alt="PharmaQuiz Logo" class="logo">
+    <h1>PharmaQuiz</h1>
+    <p class="tagline">Master Pharmacy Learning Platform</p>
+
+    <nav class="topnav">
+        <a href="index.html">Home</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-and-conditions.html">Terms</a>
+        <a href="medical-disclaimer.html">Medical Disclaimer</a>
+        <a href="purchase-refund-policy.html">Refund Policy</a>
+    </nav>
 </header>
 
-<nav>
-<a href="#privacy">Privacy Policy</a>
-<a href="#contact">Contact</a>
-</nav>
-
 <main>
-<section id="privacy">
-<h2>Privacy Policy</h2>
+
+<section class="welcome">
+<h2>Official Legal Documentation</h2>
+
+<p>
+Welcome to the official PharmaQuiz legal website.
+Here you can access our Privacy Policy,
+Terms & Conditions,
+Medical Disclaimer,
+and Purchase & Refund Policy.
+</p>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+<h3>Privacy Policy</h3>
+<p>Learn how PharmaQuiz collects, uses and protects your information.</p>
+<a href="privacy-policy.html">Read More</a>
+</div>
+
+<div class="card">
+<h3>Terms & Conditions</h3>
+<p>Read the rules governing the use of PharmaQuiz.</p>
+<a href="terms-and-conditions.html">Read More</a>
+</div>
+
+<div class="card">
+<h3>Medical Disclaimer</h3>
+<p>Educational purpose and medical information disclaimer.</p>
+<a href="medical-disclaimer.html">Read More</a>
+</div>
+
+<div class="card">
+<h3>Purchase & Refund Policy</h3>
+<p>Information regarding Capsules, billing and refunds.</p>
+<a href="purchase-refund-policy.html">Read More</a>
+</div>
+
+</section>
+
+<section class="developer">
+<h2>Developer</h2>
+
 <p><strong>Developer:</strong> ARUN C</p>
-<p><strong>Support Email:</strong> pharmanewsglobal@gmail.com</p>
+<p><strong>Email:</strong> pharmanewsglobal@gmail.com</p>
 
-<h3>Contents</h3>
-<ol>
-<li>Introduction</li>
-<li>Definitions</li>
-<li>Eligibility & Age Requirements</li>
-<li>Information We Collect</li>
-<li>How We Use Your Information</li>
-<li>Legal Basis for Processing</li>
-<li>Google Sign-In & Firebase Authentication</li>
-<li>Firebase Cloud Firestore & Cloud Services</li>
-<li>Data Sharing & Third-Party Services</li>
-<li>Data Security</li>
-<li>Your Rights & Choices</li>
-<li>Account Deletion & Data Retention</li>
-<li>Children's Privacy</li>
-<li>Changes to This Privacy Policy</li>
-<li>Contact Information</li>
-</ol>
-
-<p><strong>Note:</strong> Replace this placeholder with the complete Privacy Policy text you finalized in ChatGPT.</p>
 </section>
 
-<section id="contact">
-<h2>Contact</h2>
-<p>Developer: ARUN C</p>
-<p>Email: pharmanewsglobal@gmail.com</p>
-</section>
 </main>
 
 <footer>
+
 <p>© 2026 PharmaQuiz. All Rights Reserved.</p>
+
 </footer>
 
-<script src="script.js"></script>
+<script src="assets/js/script.js"></script>
+
 </body>
 </html>
+"""
+
+path="/mnt/data/index.html"
+Path(path).write_text(html,encoding="utf-8")
+print(path)
+
